@@ -1,0 +1,14 @@
+
+.square,.squareDisabled {
+  width: 100px;
+  height: 100px;
+  border: 1px solid darksalmon;
+  background-color: pink;
+  color: teal;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.squareDisabled {
+  cursor: auto;
+}
