@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Row from "./Row/Row";
 import { winLines } from "../../constants/winLines";
 import styles from "./TicTacToe.module.css";
@@ -38,16 +38,12 @@ export default function TicTacToe() {
     setDisabled(false);
   };
 
-  const createWinLine = () => {
-    return <div className={styles.redLine}></div>;
-  };
-
   useEffect(() => {
     if (!getWinner(squares) && squares.every((sq) => sq !== "")) {
       setGameStatus("This is a draw! Restart the game and play again:)");
     } else if (getWinner(squares)) {
-      createWinLine();
       setDisabled(true);
+      // getWinLine();
       setGameStatus(`"${getWinner(squares)}" is a winner! Play again:)`);
     } else {
       setGameStatus(`Now is "${isXTurn ? "X" : "0"}" turn now`);

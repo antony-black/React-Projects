@@ -11,4 +11,9 @@
 
 .squareDisabled {
   cursor: auto;
+  filter: blur(3px);
+}
+
+.winCombination {
+  color: red;
 }
