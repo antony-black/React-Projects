@@ -1,0 +1,23 @@
+.rockScissorsPaper {
+  margin-top: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 350px;
+  min-height: 50px;
+  border: 1px solid darkslategrey;
+  background-color: teal;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.reset {
+  margin-top: 100px;
+}
