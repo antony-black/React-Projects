@@ -9,9 +9,9 @@ export default function RockScissorsPaper() {
   const [gameStatus, setGameStatus] = useState("");
 
   const winningConditionals = {
-    rock: { beats: "paper" },
-    scissors: { beats: "rock" },
-    paper: { beats: "scissors" },
+    rock: { beats: "scissors" },
+    scissors: { beats: "paper" },
+    paper: { beats: "rock" },
   };
 
   const getRandomNumber = () => {
@@ -21,7 +21,6 @@ export default function RockScissorsPaper() {
   const handleClick = (value) => {
     setPlayerChoice(value);
     setComputerChoice(randomChoice[getRandomNumber()]);
-    // console.log(playerChoice, computerChoice);
   };
 
   const handleReset = () => {
@@ -37,9 +36,9 @@ export default function RockScissorsPaper() {
     } else if (
       winningConditionals[player.toLowerCase()].beats === computer.toLowerCase()
     ) {
-      return "Computer wins!";
-    } else {
       return "You win!";
+    } else {
+      return "Computer wins!";
     }
   };
 

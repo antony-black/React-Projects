@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url('../../assets/bg_land.avif');
   background-position: center;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .clock {
   width: 100vw;
