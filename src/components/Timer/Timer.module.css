@@ -1,0 +1,48 @@
+.timer {
+  border: 2px solid red;
+  border-radius: 6rem;
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+.time{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 6rem;
+  color: teal;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+.btn:hover {
+  text-shadow: 3px 3px 5px rgba(255,255,255, 0.75);
+  transition-duration: 600ms;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  transition-duration: 600ms;
+}
+
+.start {
+  background-color: teal;
+}
+.stop {
+  background-color: crimson;
+}
+.reset {
+  background-color: orange;
+}
