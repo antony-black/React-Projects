@@ -1,0 +1,25 @@
+body {
+  background-image: url('../../assets/bg_land.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 100vw;
+  backdrop-filter: blur(2px);
+  padding: 10px;
+}
+
+.time {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 6rem;
+  color: #fff;
+}
