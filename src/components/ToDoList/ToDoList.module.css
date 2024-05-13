@@ -1,0 +1,99 @@
+.header {
+  color: crimson;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+.taskInput {
+  min-width: 330px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  color: gray;
+}
+
+.taskInput:focus {
+  outline: none;
+  box-shadow: -5px 5px 5px rgba(0, 0, 255, 0.5);
+}
+
+.taskInput::placeholder {
+    color: rgba(220, 20, 60, 0.5);
+}
+
+.add {
+  padding: 20px 10px;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  color: crimson;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+ul {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+li {
+  font-size: 1rem;
+  text-align: left;
+}
+
+li + li {
+  margin-top: 20px;
+}
+
+.taskText {
+  color: blue;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.options {
+  margin-top: 7px;
+}
+
+.remove {
+  background-color: crimson;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 1rem;
+}
+
+.remove:hover {
+  text-shadow: -5px 5px 5px rgba(255, 255, 255, 0.7);
+  transition-duration: 200ms;
+}
+
+.remove:active {
+  transform: translateY(1px);
+  transition-duration: 200ms;
+}
+
+.upper,.lower {
+  position: relative;
+}
+
+.upper::before,.lower::before {
+  content: ""; /* This is necessary to make the pseudo-element appear */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%; /* Match the width of the parent element */
+  height: 100%; /* Match the height of the parent element */
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 50%; /* This creates the circular shape */
+  position: absolute; /* Position the pseudo-element relative to its parent */
+  top: 0; /* Position at the top */
+  left: 30; /* Position at the left */
+}
+
+.upper:hover, .lower:hover {
+  transform: scale(1.15);
+  transition-duration: 300ms;
+}
