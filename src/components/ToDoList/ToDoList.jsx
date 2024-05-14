@@ -17,11 +17,27 @@ export default function ToDoList() {
     setTasks(updatedTasks);
   };
 
-  const editTask = () => {};
+  const moveUpper = (index) => {
+    const updatedTasks = [...tasks];
+    if (index > 0) {
+      [updatedTasks[index], updatedTasks[index - 1]] = [
+        updatedTasks[index - 1],
+        updatedTasks[index],
+      ];
+    }
+    setTasks(updatedTasks);
+  };
 
-  const moveUpper = () => {};
-
-  const moveLower = () => {};
+  const moveLower = (index) => {
+    const updatedTasks = [...tasks];
+    if (index < tasks.length - 1) {
+      [updatedTasks[index], updatedTasks[index + 1]] = [
+        updatedTasks[index + 1],
+        updatedTasks[index],
+      ];
+    }
+    setTasks(updatedTasks);
+  };
 
   return (
     <div className={styles.toDOList}>
@@ -52,8 +68,24 @@ export default function ToDoList() {
                 >
                   REMOVE
                 </button>
-                <button className={styles.upper}>☝️</button>
-                <button className={styles.lower}>👇</button>
+                <button
+                  className={styles.remove}
+                  onClick={() => removeTask(index)}
+                >
+                  EDIT
+                </button>
+                <button
+                  className={styles.upper}
+                  onClick={() => editTask(index)}
+                >
+                  ☝️
+                </button>
+                <button
+                  className={styles.lower}
+                  onClick={() => moveLower(index)}
+                >
+                  👇
+                </button>
               </div>
             </li>
           ))}
