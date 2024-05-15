@@ -1,0 +1,28 @@
+.taskInput {
+  min-width: 330px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  color: gray;
+}
+
+.taskInput:focus {
+  outline: none;
+  box-shadow: -5px 5px 5px rgba(0, 0, 255, 0.5);
+}
+
+.taskInput::placeholder {
+    color: rgba(220, 20, 60, 0.5);
+}
+
+.add {
+  padding: 20px 10px;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  color: crimson;
+  font-weight: 700;
+  margin-left: 15px;
+}
