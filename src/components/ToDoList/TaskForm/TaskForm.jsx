@@ -17,7 +17,7 @@ export default function TaskForm({
       localStorage.setItem("tasks", JSON.stringify(updatedTasks));
       return updatedTasks;
     });
-    cancel();
+    handleCancel();
   };
 
   const handleCancel = () => {
